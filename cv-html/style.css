@@ -1,0 +1,127 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO GENERAL DEL BODY */
+body {
+    background-color: #ffe6ef; /* rosa suave */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.cv-container {
+    width: 550px;
+    background-color: #ffffff; /* blanco para contraste */
+    padding: 40px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    text-align: center; /* centra todo el contenido */
+    border-radius: 10px; /* bordes redondeados */
+}
+
+/* ENCABEZADO */
+.cv-header {
+    margin-bottom: 30px;
+}
+
+/* FOTO DE PERFIL */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* foto circular */
+    margin-bottom: 15px;
+    border: 3px solid #f4c2dc; /* borde rosa suave */
+}
+
+/* NOMBRE */
+.cv-header h1 {
+    color: #d63384;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* DESCRIPCIÓN */
+.descripcion {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* UBICACIÓN */
+.ubicacion {
+    color: #888;
+    font-size: 14px;
+}
+
+/* SECCIONES */
+.cv-section {
+    margin-top: 25px;
+    text-align: left; /* para listas y tablas */
+}
+
+/* TÍTULOS DE SECCIÓN */
+.cv-section h2 {
+    color: #c2185b;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* LISTAS */
+.cv-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cv-section ul li {
+    margin: 6px 0;
+    padding-left: 10px;
+    position: relative;
+}
+
+.cv-section ul li::before {
+    content: "•";
+    color: #d63384; /* rosa suave */
+    position: absolute;
+    left: 0;
+}
+
+/* TABLA DE IDIOMAS */
+.idiomas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.idiomas th, .idiomas td {
+    border: 1px solid #f4c2dc;
+    padding: 8px;
+    text-align: left;
+}
+
+.idiomas th {
+    background-color: #fcd5e3; /* rosa muy suave */
+    color: #c2185b;
+}
+
+/* ENLACES */
+a {
+    color: #d63384;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ICONOS */
+.cv-section i {
+    margin-right: 8px;
+    color: #d63384;
+}
