@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Esto sirve para que el navegador entienda bien los caracteres (tildes, ñ, etc.) -->
     <meta charset="UTF-8">
+
+    <!-- Título que aparece en la pestaña del navegador -->
     <title>CV de Amalia Catalina Greczny</title>
 
+    <!-- Descripción para Google (SEO, ayuda a posicionar) -->
     <meta name="description" content="Currículum de Amalia Catalina Greczny con información sobre su formación académica, habilidades y experiencia laboral en atención al cliente, biblioteca y programación básica en Python.">
+
+    <!-- Autor de la página -->
     <meta name="author" content="Amalia Catalina Greczny">
+
+    <!-- Palabras clave para buscadores -->
     <meta name="keywords" content="currículum, CV, Amalia Greczny, atención al cliente, camarera, biblioteca, programación Python, empleo">
 
+    <!-- Aquí conectamos el archivo CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Librería de iconos (los dibujitos tipo correo, ubicación, etc.) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- Contenedor principal de todo el CV -->
     <div class="cv-container">
 
-        <!-- ENCABEZADO -->
+        <!-- ENCABEZADO (foto + nombre + descripción) -->
         <header class="cv-header">
+            
+            <!-- Imagen de perfil -->
             <img src="gato.jpg" alt="gato" class="profile-pic">
+
+            <!-- Nombre principal -->
             <h1>Amalia Catalina Greczny</h1>
+
+            <!-- Descripción personal -->
             <p class="descripcion">
                 Persona proactiva y responsable con interés en desarrollarse profesionalmente, con capacidad de aprendizaje y adaptación a distintos entornos laborales.
             </p>
-            <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Málaga</p>
+
+            <!-- Ubicación -->
+            <p class="ubicacion">
+                <i class="fas fa-map-marker-alt"></i> Málaga
+            </p>
         </header>
 
         <!-- EDUCACIÓN -->
@@ -35,21 +57,21 @@
             </ul>
         </section>
 
-        <!-- EXPERIENCIA LABORAL -->
+        <!-- EXPERIENCIA -->
         <section class="cv-section">
             <h2><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
             <ul>
                 <li>
                     <strong>Prácticas en biblioteca</strong><br>
-                    Gestión y organización de libros, clasificación de material bibliográfico y apoyo en tareas administrativas.
+                    Gestión y organización de libros, clasificación y ayuda administrativa.
                 </li>
                 <li>
                     <strong>Prácticas en programación (Python)</strong><br>
-                    Desarrollo de programas básicos, comprensión de estructuras de control y resolución de problemas simples mediante código.
+                    Programas básicos y resolución de problemas simples.
                 </li>
                 <li>
                     <strong>Camarera</strong><br>
-                    Atención al cliente, toma de pedidos, servicio en mesa y trabajo en equipo en entornos dinámicos.
+                    Atención al cliente y trabajo en equipo.
                 </li>
             </ul>
         </section>
@@ -57,6 +79,8 @@
         <!-- IDIOMAS -->
         <section class="cv-section">
             <h2><i class="fas fa-language"></i> Idiomas</h2>
+
+            <!-- Tabla para organizar idiomas -->
             <table class="idiomas">
                 <thead>
                     <tr>
@@ -110,3 +134,4 @@
 
 </body>
 </html>
+
