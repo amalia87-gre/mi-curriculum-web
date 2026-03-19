@@ -1,23 +1,23 @@
-/* RESET */
+/* RESET: esto quita márgenes raros que ponen los navegadores por defecto */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
+/* BODY: fondo general y centrado del CV */
 body {
-    background-color: #ffe6ef;
+    background-color: #ffe6ef; /* fondo rosa claro */
     font-family: 'Arial', sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    justify-content: center; /* centra horizontal */
+    align-items: center; /* centra vertical */
+    min-height: 100vh; /* ocupa toda la pantalla */
 }
 
-/* CONTENEDOR (MÁS ANCHO) */
+/* CONTENEDOR PRINCIPAL */
 .cv-container {
-    width: 700px; /* antes 550px */
+    width: 700px;
     background-color: #ffffff;
     padding: 40px;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
@@ -30,29 +30,33 @@ body {
     margin-bottom: 30px;
 }
 
+/* FOTO */
 .profile-pic {
     width: 150px;
     height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
+    object-fit: cover; /* evita deformaciones */
+    border-radius: 50%; /* círculo */
     margin-bottom: 15px;
     border: 3px solid #f4c2dc;
 }
 
+/* NOMBRE */
 .cv-header h1 {
     color: #d63384;
     font-size: 30px;
     margin-bottom: 10px;
 }
 
+/* DESCRIPCIÓN */
 .descripcion {
     color: #555;
     font-size: 16px;
     margin-bottom: 5px;
 }
 
+/* UBICACIÓN (CAMBIADO A NEGRO PARA LIGHTHOUSE) */
 .ubicacion {
-    color: #888;
+    color: #000000; /* antes gris, ahora negro más accesible */
     font-size: 14px;
 }
 
@@ -62,6 +66,7 @@ body {
     text-align: left;
 }
 
+/* TÍTULOS */
 .cv-section h2 {
     color: #c2185b;
     font-size: 20px;
@@ -80,28 +85,32 @@ body {
     line-height: 1.4;
 }
 
+/* PUNTITOS DE LISTA */
 .cv-section ul li::before {
     content: "•";
-    color: #d63384; /* corregido */
+    color: #d63384;
     position: absolute;
     left: 0;
 }
 
-/* TABLA */
+/* TABLA IDIOMAS */
 .idiomas {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
 }
 
+/* CELDAS */
 .idiomas th, .idiomas td {
     border: 1px solid #f4c2dc;
     padding: 8px;
+    color: #000000; /* texto negro (mejora contraste Lighthouse) */
 }
 
+/* CABECERA TABLA (CAMBIADO A NEGRO) */
 .idiomas th {
     background-color: #fcd5e3;
-    color: #c2185b;
+    color: #000000; /* antes rosa oscuro, ahora negro */
 }
 
 /* LINKS */
@@ -110,6 +119,7 @@ a {
     text-decoration: none;
 }
 
+/* EFECTO AL PASAR EL RATÓN */
 a:hover {
     text-decoration: underline;
 }
